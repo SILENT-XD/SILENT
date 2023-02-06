@@ -8,10 +8,10 @@ except KeyError:
 	
 if __name__ == "__main__":
 	os.system("git pull")
-	os.system("OK")
-	os.system("CP")
-	os.system("/sdcard/OK")
-	os.system("/sdcard/CP")
+	os.system("mkdir OK")
+	os.system("mkdir CP")
+	os.system("mkdir /sdcard/OK")
+	os.system("mkdir /sdcard/CP")
 	if "Indonesia" == fc:
 		__import__("silent").menu()
 	else:
