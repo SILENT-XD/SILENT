@@ -6,12 +6,17 @@ except KeyError:
 	print("[*] koneksi anda buruk,silahkan refresh data anda.")
 	exit()
 	
-if __name__ == "__main__":
-	os.system("git pull")
-	os.system("OK")
-	os.system("CP")
-	os.system("/sdcard/OK")
-	os.system("/sdcard/CP")
+if __name__=='__main__':
+	try:os.mkdir('git pull')
+	except:pass
+	try:os.mkdir('OK')
+	except:pass
+	try:os.mkdir('CP')
+	except:pass
+	try:os.mkdir('/sdcard/OK')
+	except:pass
+	try:os.mkdir('/sdcard/CP')
+	except:pass
 	if "Indonesia" == fc:
 		__import__("silent").menu()
 	else:
